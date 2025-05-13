@@ -45,7 +45,8 @@ export MODEL_ROOT=<downloaded_model_root>
 python3 unhcv/projects/diffusion/inpainting/evaluation/evaluation_model.py
 ```
 
-Metric
+Metric:
+
 download Mask2Former_hornet_3x_576d0b.pth from https://huggingface.co/datasets/qqlu1992/Adobe_EntitySeg/tree/main/CropFormer_model/Entity_Segmentation/Mask2Former_hornet_3x, then modify third_party/Entity/Entityv2/CropFormer/configs/entityv2/entity_segmentation/mask2former_hornet_3x.yaml WEIGHTS to your model path.
 ```shell
 python3 unhcv/projects/diffusion/inpainting/evaluation/evaluation_metric.py
@@ -53,7 +54,7 @@ python3 unhcv/projects/diffusion/inpainting/evaluation/evaluation_metric.py
 
 ## Dataset
 
-Our entity segmentation dataset can be downloaded from https://huggingface.co/datasets/unhzyx/entity_erasure/tree/main
+Our entity segmentation dataset can be downloaded from https://huggingface.co/datasets/unhzyx/entity_erasure/tree/main.
 
 ## Finetune
 
