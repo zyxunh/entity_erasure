@@ -8,6 +8,8 @@ Put this project in your ${HOME}/code path
 
 Install mask2former:
 ```shell
+mkdir third_party
+git clone https://github.com/zyxunh/Mask2Former_for_entity_erasure.git third_party/Mask2Former
 cd third_party/Mask2Former
 pip3 install -e .
 cd -
@@ -15,6 +17,7 @@ cd -
 
 Install Entity:
 ```shell
+git clone https://github.com/zyxunh/Entity_for_entity_erasure.git third_party/Entity
 cd third_party/Entity/Entityv2
 bash init.sh
 cd -
@@ -22,14 +25,15 @@ cd -
 
 Install diffusers:
 ```shell
+git clone https://github.com/zyxunh/diffusers_for_entity_erasure.git third_party/diffusers
 cd third_party/diffusers
-pip3 installl -e .
+pip3 install -e .
 cd -
 ```
 
 Install unhcv:
 ```shell
-pip3 installl -e .
+pip3 install -e .
 ```
 
 ## Inference
@@ -42,7 +46,7 @@ python3 unhcv/projects/diffusion/inpainting/evaluation/evaluation_model.py
 ```
 
 Metric
-
+download Mask2Former_hornet_3x_576d0b.pth from https://huggingface.co/datasets/qqlu1992/Adobe_EntitySeg/tree/main/CropFormer_model/Entity_Segmentation/Mask2Former_hornet_3x, then modify third_party/Entity/Entityv2/CropFormer/configs/entityv2/entity_segmentation/mask2former_hornet_3x.yaml WEIGHTS to your model path.
 ```shell
 python3 unhcv/projects/diffusion/inpainting/evaluation/evaluation_metric.py
 ```

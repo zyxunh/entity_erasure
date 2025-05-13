@@ -19,5 +19,5 @@ addict
 yapf
 # diffusers==0.29.2
 
---index-url https://download.pytorch.org/whl/cu124
-xformers #
+# --index-url https://download.pytorch.org/whl/cu124
+# xformers #
