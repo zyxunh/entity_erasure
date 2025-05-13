@@ -44,7 +44,6 @@ from unhcv.common.utils import obj_load, write_im, obj_dump, write_txt, remove_d
     find_path
 from unhcv.common.image import visual_mask, concat_differ_size_tensor
 from unhcv.projects.diffusion.inference import DiffusionInferencePipeline
-from unhcv.projects.diffusion.inpainting.evaluation.dataset import InpaintEvalutionDataset
 from unhcv.projects.diffusion.ldm import LdmWrap, UNet2DConditionModelExtraOut, UNet2DConditionModel
 from unhcv.projects.diffusion.inpainting.dataset import InpaintingDatasetWithMask
 from unhcv.projects.diffusion.inpainting.train_inpainting import TrainInpainting

@@ -12,8 +12,7 @@ from unhcv.common.utils import find_path, obj_load
 
 class RemovingMetric:
     def __init__(self, instance_score_thres=0.3, inter_ratio_thres=0.8, min_area_ratio_thres=0.005):
-        config_file = find_path(
-            "code/unhcv/third_party/Entity/Entityv2/CropFormer/configs/entityv2/entity_segmentation/mask2former_hornet_3x.yaml")
+        config_file = "third_party/Entity/Entityv2/CropFormer/configs/entityv2/entity_segmentation/mask2former_hornet_3x.yaml"
 
         self.entity_api = EntityApi(config_file=config_file)
         self.instance_score_thres = instance_score_thres

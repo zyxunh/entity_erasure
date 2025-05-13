@@ -51,11 +51,16 @@ download Mask2Former_hornet_3x_576d0b.pth from https://huggingface.co/datasets/q
 python3 unhcv/projects/diffusion/inpainting/evaluation/evaluation_metric.py
 ```
 
+## Dataset
+
+Our entity segmentation dataset can be downloaded from https://huggingface.co/datasets/unhzyx/entity_erasure/tree/main
+
 ## Finetune
+
 ```shell
 export MODEL_ROOT=<downloaded_model_root>
 
-# finetune amodal completion model
+# finetune amodal completion model, you can construct the data according to our format and modify the dataset_config to finetune on your own dataset.
 cd unhcv/projects/diffusion/inpainting
 bash train_inpainting.sh 1 --dataset_config configs/dataset/entity_seg.py \
 --model_config configs/entity_erasure.py \
