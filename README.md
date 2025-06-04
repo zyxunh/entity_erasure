@@ -54,7 +54,7 @@ python3 unhcv/projects/diffusion/inpainting/evaluation/evaluation_metric.py
 
 ## Dataset
 
-Our entity segmentation dataset can be downloaded from https://huggingface.co/datasets/unhzyx/entity_erasure/tree/main.
+Our entity segmentation dataset can be downloaded from https://pan.baidu.com/s/1vEXvw60QbUaR-WB0lxbvCA code: 74rh 
 
 ## Finetune
 
